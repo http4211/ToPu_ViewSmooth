@@ -43,7 +43,6 @@ You can also launch **ToPu_ViewSmooth** from the left toolbar, the Edge menu, or
 - Adjust Smoothness and Curve Amount independently from **−1000% to 1000%**.
 - Restrict movement to the horizontal or vertical direction through settings.
 - Follow mesh X/Y/Z position mirror settings, including multiple axes.
-- Show Curve Amount and Smoothness in one row inside a translucent gray panel. Separate Wheel / Mouse Move hint boxes and blue / purple accents identify each control; the last adjusted field is highlighted.
 - Recalculate from the starting coordinates so adjustments do not accumulate.
 
 | Parameter | Default | Effect |
