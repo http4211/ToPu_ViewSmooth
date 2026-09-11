@@ -95,13 +95,10 @@ HUDはパーセント表示です。プロパティの値では、`1.0`が`100%`
 | ホイール | カーブ量を調整。1段で10パーセントポイント |
 | 左クリック | 確定 |
 | 右クリック | 開始時の頂点位置へ戻してキャンセル |
-| 3Dマウスの移動・回転入力／中ボタン／トラックパッド | ビューの移動・回転・ズーム |
 
 実行中の調整はマウス移動とホイールで行います。数値や移動方向を直接指定したい場合は、起動前のツール設定・アドオンプリファレンス、または確定後のF9を使用してください。
 
-**変形の方向と奥行きは、実行開始時のビューが基準です。** ビューを回転しても基準は変わりません。新しい方向を基準にする場合は、一度確定またはキャンセルして起動し直してください。F9も開始時のビューを使用します。
-
-ビュー操作後は、次のマウス移動で位置の基準を取り直します。ホイールはカーブ量の調整に使用し、3Dマウスの任意のボタン入力や別のメッシュ編集操作は通しません。キャンセルで戻すのは頂点位置で、操作中に変更したビュー方向はそのままです。
+**変形の方向と奥行きは、実行開始時のビューが基準です。** F9も開始時のビューを使用します。
 
 ## オプション
 
@@ -121,7 +118,7 @@ HUDはパーセント表示です。プロパティの値では、`1.0`が`100%`
 - ミラーは位置による照合です。**トポロジーミラーによる対応付けには非対応**で、有効にしていても位置で照合します。対応先がない・一意に決まらない・非表示の場合は、その頂点への反映を省略します。
 - 正常に投影できない列や、異なる変換行列のオブジェクトが共有するメッシュなどは除外します。
 
-詳しい条件は配布用ZIP内の`README.md`を参照してください。Blender本体のGUI、3Dマウス実機、他アドオンとの組み合わせについては、現在の構成での動作確認は未実施です。
+詳しい条件は配布用ZIP内の`README.md`を参照してください。Blender本体のGUI、他アドオンとの組み合わせについては、現在の構成での動作確認は未実施です。
 
 ## ライセンスとクレジット
 
@@ -202,11 +199,8 @@ After confirming, use **F9** to adjust the parameters again. Both live adjustmen
 | Mouse wheel | Adjust Curve Amount; 10 percentage points per step |
 | Left-click | Confirm |
 | Right-click | Cancel and restore the starting vertex positions |
-| 3D mouse motion / middle mouse button / trackpad | Navigate the view |
 
 Live adjustment uses mouse movement and the wheel. Set exact values and screen movement restrictions in the tool settings or add-on preferences before starting, or in F9 after confirming.
-
-Navigating the view does not change the adjustment basis. To use another view direction, finish or cancel and start again. Arbitrary 3D mouse button commands and other mesh edits are consumed while the adjustment is active. Canceling restores vertex positions, but keeps any view navigation.
 
 ## Options and limitations
 
@@ -216,7 +210,7 @@ Closed loops, branched selections, and single edges are skipped. Unselected edge
 
 Mirroring uses existing vertex positions in object-local coordinates, relative to the object origin. **Topology-based mirror matching is not supported.** Missing, ambiguous, or hidden destinations are skipped. The selected side keeps its view depth; the mirrored side may change depth in an oblique view. When both sides are selected, each chain is processed independently.
 
-The current build has not been verified in Blender's GUI, with a physical 3D mouse, or in combination with other add-ons.
+The current build has not been verified in Blender's GUI or in combination with other add-ons.
 
 ## License and credits
 
