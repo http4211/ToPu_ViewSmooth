@@ -72,7 +72,7 @@ HUDはパーセント表示です。プロパティの値では、`1.0`が`100%`
 
 ### コンパクトなHUD
 
-画面下部中央に、**カーブ量（Wheel）とスムーズ量（マウス移動）を1行**で表示します。直前に調整した項目を色で区別します。文字サイズはBlenderのUIスケールに従い、狭いビューでは収まるように縮小します。
+画面下部中央に、**カーブ量とスムーズ量を1行**で表示します。半透明グレーのパネル内に2つの項目を並べ、それぞれの左側に操作ヒントの **Wheel / マウス移動** を枠付きで表示します。カーブ量は青、スムーズ量は紫をアクセントにし、直前に調整した項目の背景と左端を強調します。文字サイズはBlenderのUIスケールに従い、狭いビューでは収まるように縮小します。
 
 ## 基本的な使い方
 
@@ -174,7 +174,7 @@ You can also launch **ToPu_ViewSmooth** from the left toolbar, the Edge menu, or
 - Adjust Smoothness and Curve Amount independently from **−1000% to 1000%**.
 - Restrict movement to the horizontal or vertical direction through settings.
 - Follow mesh X/Y/Z position mirror settings, including multiple axes.
-- Show Curve Amount (Wheel) and Smoothness (Mouse Move) in a compact, single-line HUD.
+- Show Curve Amount and Smoothness in one row inside a translucent gray panel. Separate Wheel / Mouse Move hint boxes and blue / purple accents identify each control; the last adjusted field is highlighted.
 - Recalculate from the starting coordinates so adjustments do not accumulate.
 
 | Parameter | Default | Effect |
