@@ -13,7 +13,6 @@ Align the selected edges based on the view.
 - Blender 4.2以降
 - 表示言語：日本語 / English。アドオンプリファレンスの概要説明は両言語を併記
 - 対象：メッシュ編集モードの、3頂点以上で分岐のない開いた辺ループ
-- アドオンバージョン：1.0.11
 
 ## ダウンロード
 
@@ -73,7 +72,7 @@ HUDはパーセント表示です。プロパティの値では、`1.0`が`100%`
 
 ### コンパクトなHUD
 
-画面下部中央に、**カーブ量とスムーズ量だけを1行**で表示します。直前に調整した項目を色で区別します。文字サイズはBlenderのUIスケールに従い、狭いビューでは収まるように縮小します。
+画面下部中央に、**カーブ量（Wheel）とスムーズ量（マウス移動）を1行**で表示します。直前に調整した項目を色で区別します。文字サイズはBlenderのUIスケールに従い、狭いビューでは収まるように縮小します。
 
 ## 基本的な使い方
 
@@ -150,7 +149,6 @@ Move the mouse horizontally to adjust **Smoothness**, and use the wheel to adjus
 - Blender 4.2 or later
 - Mesh Edit Mode; open, unbranched edge chains with at least 3 vertices
 - Japanese / English UI; the add-on preferences overview is always shown in both languages
-- Add-on version: 1.0.11
 
 ## Download and installation
 
@@ -176,7 +174,7 @@ You can also launch **ToPu_ViewSmooth** from the left toolbar, the Edge menu, or
 - Adjust Smoothness and Curve Amount independently from **−1000% to 1000%**.
 - Restrict movement to the horizontal or vertical direction through settings.
 - Follow mesh X/Y/Z position mirror settings, including multiple axes.
-- Show only Curve Amount and Smoothness in a compact, single-line HUD.
+- Show Curve Amount (Wheel) and Smoothness (Mouse Move) in a compact, single-line HUD.
 - Recalculate from the starting coordinates so adjustments do not accumulate.
 
 | Parameter | Default | Effect |
